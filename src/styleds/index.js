@@ -2,12 +2,12 @@ import styled from 'styled-components'
 
 export const StyleHeader = styled.nav`
     width: 100%;
-    height: 94px;
-    z-index: 100;
+    height: 100px;
+    z-index: 1;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
     position: fixed;
     top: 0;
@@ -15,17 +15,19 @@ export const StyleHeader = styled.nav`
     right: 0;
     padding-left: 5%;
     padding-right: 5%;
-
     background: var(--white);
+    margin-top: -1px;
+    -webkit-transition: margin-top 2s ease-in-out;
+    transition: margin-top 2s ease-in-out;
 `
 
 export const Main = styled.main`
     background: var(--white);
     color: black;
     flex: 1;
-    padding-top: 94px;
-    padding-right: 5%;
-    padding-left: 5%; 
+    padding-top: 110px;
+    padding-right: 0;
+    padding-left: 0; 
 `
 
 export const StyleFooter = styled.footer`
@@ -93,4 +95,9 @@ export const StyleFooter = styled.footer`
         background: var(--blueDark);
         padding: 15px 0px 5px 0px;
     }
+`
+
+export const ImageBanner = styled.img`
+    height: 500px;
+    width: 100%;
 `

@@ -1,6 +1,5 @@
 import React from 'react'
-import Header from './header'
-import Footer from './footer'
+import {Header, Footer} from '../components'
 import {Main} from '../styleds'
 
 const PageDefault = ({children}) => {

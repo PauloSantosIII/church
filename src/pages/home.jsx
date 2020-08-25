@@ -1,10 +1,10 @@
 import React from 'react'
-import PageDefault from '../components/pageDefault'
+import {PageDefault, Banner} from '../components'
 
 const Home = () => {
     return (
         <PageDefault>
-            <h1>Site PIB</h1>
+            <Banner />
         </PageDefault>
     )
 
