@@ -1,10 +1,11 @@
 import React from 'react'
-import {PageDefault, Banner} from '../components'
+import {PageDefault, Banner, Main} from '../components'
 
 const Home = () => {
     return (
         <PageDefault>
             <Banner />
+            <Main />
         </PageDefault>
     )
 

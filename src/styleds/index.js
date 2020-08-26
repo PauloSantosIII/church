@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const StyleHeader = styled.nav`
     width: 100%;
-    height: 100px;
+    height: 50px;
     z-index: 1;
 
     display: flex;
@@ -17,15 +17,17 @@ export const StyleHeader = styled.nav`
     padding-right: 5%;
     background: var(--white);
     margin-top: -1px;
-    -webkit-transition: margin-top 2s ease-in-out;
-    transition: margin-top 2s ease-in-out;
+
+    .ant-menu-horizontal {
+        border: none;
+    }
 `
 
 export const Main = styled.main`
     background: var(--white);
     color: black;
     flex: 1;
-    padding-top: 110px;
+    padding-top: 60px;
     padding-right: 0;
     padding-left: 0; 
 `
@@ -100,4 +102,53 @@ export const StyleFooter = styled.footer`
 export const ImageBanner = styled.img`
     height: 500px;
     width: 100%;
+`
+export const StyledMain = styled.div`
+    height: 100%;
+    width: 100%;
+    background-color: ${({color}) => color};
+    padding-bottom: 3vh;
+    padding-top: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    h2 {
+        color: var(--white);
+        font-weight: bold;
+        padding-top: 12vh;
+    }
+
+    p {
+        color: var(--white);
+        font-weight: bold;
+    }
+`
+
+export const ImageDiv = styled.div`
+    background-image: ${({url}) => `url(${url})`};
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30vh;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10vw;
+    border-top: 4px solid orange;
+    margin-bottom: 2vh;
+    cursor: pointer;
+    text-align: center;
+`
+export const ImageHalfDivLeft = styled(ImageDiv)`
+    width: 39vw;
+    border-top: none;
+    border-right: 4px solid orange;
+    margin-left: 10vw;
+    text-align: right;
+`
+export const ImageHalfDivRight = styled(ImageDiv)`
+    width: 39vw;
+    border-top: none;
+    border-left: 4px solid orange;
+    margin-left: 2vw;
+    text-align: left;
 `
