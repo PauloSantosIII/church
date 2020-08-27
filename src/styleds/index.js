@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import 'antd/dist/antd.css'
 
 export const StyleHeader = styled.nav`
     width: 100%;
@@ -20,6 +21,22 @@ export const StyleHeader = styled.nav`
 
     .ant-menu-horizontal {
         border: none;
+        color: var(--black);
+    }
+
+    div.ant-menu-submenu-title:hover {
+        color: var(--black);
+        border-bottom: var(--black);
+    }
+
+    @media (max-width: 800px) {
+        img {
+            max-width: 120px;
+        }
+                
+        .ant-menu-horizontal {
+
+        }
     }
 `
 
@@ -46,13 +63,18 @@ export const StyleFooter = styled.footer`
         width: 80%;
         margin: auto;
         display: flex;
+
+        @media (max-width: 800px) {
+            display: inline;
+            text-align: center;
+        }
     }
 
-    a {
+    a, a:visited {
         text-decoration: none;
     }
 
-    .Contact {
+    .Content {
         width: 31.33%;
         margin-right: 3%;
         margin-bottom: 3%;
@@ -66,31 +88,12 @@ export const StyleFooter = styled.footer`
         p {
             font-size: 16px;
         }
+
+        @media (max-width: 800px) {
+            display: inline;
+            text-align: center;
+        }
     
-    }
-
-    .Links {
-        width: 31.33%;
-        margin-right: 3%;
-        margin-bottom: 3%;
-        color: var(--with);
-        flex: 1;
-
-        h4 {
-            color: var(--blue);
-        }
-    }
-
-    .Others {
-        width: 31.33%;
-        margin-right: 3%;
-        margin-bottom: 3%;
-        color: var(--with);
-        flex: 1;
-
-        h4 {
-            color: var(--blue);
-        }
     }
 
     .footer {
@@ -102,6 +105,10 @@ export const StyleFooter = styled.footer`
 export const ImageBanner = styled.img`
     height: 500px;
     width: 100%;
+
+    @media (max-width: 800px) {
+        height: 200px;
+    }
 `
 export const StyledMain = styled.div`
     height: 100%;
@@ -144,6 +151,13 @@ export const ImageHalfDivLeft = styled(ImageDiv)`
     border-right: 4px solid orange;
     margin-left: 10vw;
     text-align: right;
+
+    @media (max-width: 800px) {
+        width: 80vw;
+        text-align: center;
+        border-top: 4px solid orange;
+        border-right: none;
+    }
 `
 export const ImageHalfDivRight = styled(ImageDiv)`
     width: 39vw;
@@ -151,4 +165,12 @@ export const ImageHalfDivRight = styled(ImageDiv)`
     border-left: 4px solid orange;
     margin-left: 2vw;
     text-align: left;
+
+    @media (max-width: 800px) {
+        width: 80vw;
+        text-align: center;
+        border-top: 4px solid orange;
+        border-left: none;
+        margin-left: 10vw;
+    }
 `
