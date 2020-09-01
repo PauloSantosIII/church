@@ -109,6 +109,10 @@ export const ImageBanner = styled.img`
     @media (max-width: 800px) {
         height: 200px;
     }
+
+    div {
+        box-sizing: border-box;
+    }
 `
 export const StyledMain = styled.div`
     height: 100%;
@@ -129,6 +133,13 @@ export const StyledMain = styled.div`
     p {
         color: var(--white);
         font-weight: bold;
+    }
+
+    iframe {
+        margin-bottom: 4vh;
+        margin-left: 10vw;
+        width: 80vw;
+        height: 80vh;
     }
 `
 

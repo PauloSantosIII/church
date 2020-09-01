@@ -8,7 +8,9 @@ const Banner = () => {
     return (
         <Carousel autoplay>
             {bgBanner.map((image, index) => (
-                <ImageBanner key={index} alt={image.id} src={image.link} />
+                <a href={image.a}>
+                    <ImageBanner key={index} alt={image.id} src={image.link} />
+                </a>
             ))}
       </Carousel>    
     )

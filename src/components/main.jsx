@@ -6,6 +6,7 @@ import {urlMain1, urlMain2, urlMain3, urlMain4, urlMain5} from './links'
 const Main = () => {
     return (
         <StyledMain color='lightgrey'>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EJ2SZiFORvA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <ImageDiv as={Link} to='/igrejaonline' url={urlMain1} >
                 <h2>PROGRAMAÇÃO ONLINE</h2>
                 <p>Fique por dentro dos horários dos cultos, lives e outras programações.</p>
